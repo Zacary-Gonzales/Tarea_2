@@ -1,341 +1,229 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tarea 12BTP Cta. 58</title>
+    <title>Zacary's Work</title>
+
+    <style>
+        *{
+            margin:0;
+            padding:0;
+            box-sizing: border-box;
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: whitesmoke;
+        }
+
+        body{
+            overflow-x: hidden;
+        }
+
+        header{
+            width:100vw;
+            margin-bottom: 20px;
+            justify-content: center;
+            align-items: center;
+            background-color: rgb(2, 2, 77);
+            color: white;
+            height:50px;
+            display: inline-block;
+            font-size: 25px;
+            font-weight: bold;
+            padding: 10px;
+            text-indent: 30px;
+        }
+
+        header .Links{
+            text-indent: 50vw;
+            display: inline-block;
+            background-color: rgb(2, 2, 77);
+            font-size: 15px;
+            padding:10px;
+        }
+
+        header .Links a{
+            background-color: rgb(2, 2, 77);
+            color: white;
+            text-decoration: none;
+            padding: 0px 10px;
+            transition: 0.5s all ease;
+        }
+
+        header .Links a:hover{
+            color: lightgray;
+            text-decoration: underline;
+        }
+
+        .images{
+            width: 100vw;
+            margin: auto;
+            display:inline-block;
+            position: relative;
+            left: 200px;
+            margin-bottom: 50px;
+        }
+        
+        .images .carta1, .images .carta2, .images .carta3{
+            border: 1px solid rgb(207, 207, 207);
+            border-radius: 10px;
+            width: 20vw;
+            height: 450px;
+            margin: 0px 20px;
+            display: inline-block;
+            transition: all 0.9s ease;
+        }
+
+        .images .carta1:hover, .images .carta2:hover, .images .carta3:hover{
+            transform: scale(1.1);
+        }
+        
+
+        .images .img1, .images .img2, .images .img3 {
+            height: 80%;
+            background-size: cover;
+            background-repeat: no-repeat;
+            border-radius: 10px 10px 0 0;
+        }
+
+        .images .img1{
+            background-image: url('https://images.unsplash.com/photo-1612441804231-77a36b284856?fm=jpg&q=60&w=3000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8cGFpc2FqZSUyMGRlJTIwbW9udGElQzMlQjFhfGVufDB8fDB8fHww');
+        }
+
+        .images .img2{
+            background-image: url('https://st3.idealista.com/news/archivos/styles/fullwidth_xl/public/2018-08/selva_de_tailandia.jpg?VersionId=aMXkAZ8SqV6OL7NwVSjLPS1cMwCTAexO&itok=yKqmBKu1');
+        }
+
+        .images .img3{
+            background-image: url('https://previews.123rf.com/images/badahos/badahos1905/badahos190500258/122520075-maravillosa-costa-del-oc%C3%A9ano-%C3%ADndico-en-sri-lanka.jpg');
+        }
+
+        .contenido1, .contenido2, .contenido3{
+            display: block;
+            height: 20%;
+            padding: 10px 20px;
+            background-color: rgba(2, 2, 2, 0);
+        }
+
+        .contenido1::first-line, .contenido2::first-line, .contenido3::first-line{
+            font-size: 20px;
+            font-weight: bold;
+            padding-bottom: 10px;
+        }
+
+        #Destinos{
+            border: 0.5px rgb(188, 187, 187) solid;
+            width: 70vw;
+            margin: auto;
+            border-collapse: collapse;
+            margin-bottom: 50px;
+        }
+
+        #Destinos tr{
+            text-align: left;
+            vertical-align: middle;
+            height: 40px;
+            transition: 1.5s all ease;
+            margin: 0;
+        }
+
+        #Destinos tr:hover td{
+            background-color: rgba(85, 84, 84, 0.259);
+            font-weight:700;
+        }
+
+        #Destinos tr:hover th{
+            background-color: rgba(163, 161, 161, 0.477);
+        }
+
+        #Destinos td{
+            border: 0 0 0 0;
+            border-top: 1px rgb(188, 187, 187) solid;
+            padding: 10px;
+            margin: 0;
+        }
+
+        #Destinos th{
+            padding: 10px;
+            background-color: rgb(2, 2, 77);
+            color: white
+        }
+
+        
+
+
+
+
+        
+    </style>
 </head>
-<body font-family="Trebuchet MS" bgcolor="#C9C6C6">
+<body>
+    <header>
+        Viajes Y Naturaleza
+        <div class="Links">
+            <a href="index.html">Inicio</a>
+            <a href="Galeria.html">Galeria</a>
+            <a href="Destino.html">Destinos</a>
+            <a href="Contacto.html">Contacto</a>
+        </div>
+    </header>
 
+    <section class="images">
+        <div class="carta1">
+            <div class="img1"></div>
+            <div class="contenido1">
+                Paisajes de Montaña<br>
+                Impresionantes vistas de cordilleras y picos nevados.
+            </div>
+        </div>
 
+        <div class="carta2">
+            <div class="img2"></div>
+            <div class="contenido2">
+                Bosques Misteriosos<br>
+                Explorando la tranquilidad de los bosques antiguos.
+            </div>
+        </div>
 
-    <table width="100%" border="0" cellspacing="0" cellpadding="0" bgcolor="gray" bordercolor="gray">
-        <tr align="center">
-            <td ID="TOPp"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRN2RIS2Vt8E6fOeUvLFXVCPuJMKq7EParpNw&s" alt="Logo Marista" width="75px" height="auto"></td>
-            <td><p><h1><font size="150px"><b><u>Mi Perfil Personal</u></b></font></h1></p></td>
-        </tr>
-        <tr height="5px" align="center">
-            <td colspan="2" bgcolor="black"></td>
-        </tr>
-        <tr height="5px" align="center">
-            <td colspan="2" bgcolor="#343434">
-                <p>
-                    <a href="#perdata">Informacion Personal</a> | <a href="#fort">Fortalezas Y Mas</a> |
-                    <a href="#edu">Educacion</a> | <a href="#Languages">Idiomas</a> | 
-                    <a href="#obje">Objetivos</a> | <a href="#contact"> Contactos</a>
-                </p>
-            </td>
-        </tr>
-        <tr height="5px" align="center">
-            <td colspan="2" bgcolor="black"></td>
-        </tr>
-    </table>
+        <div class="carta3">
+            <div class="img3"></div>
+            <div class="contenido3">
+                Costas Paradisiacas<br>
+                Playas de arena blanca y aguas cristalinas
+            </div>
+        </div>
+    </section>
 
-    
-
-    <table width="100%" border="0" cellspacing="0" cellpadding="0" ID="perdata">
+    <table ID="Destinos">
         <tr>
-            <td width="70%"><p><h2>&nbsp;&nbsp;Datos Personales: </h2> <br> <b>&nbsp;&nbsp;Nombre:</b> Zacary Emir Gonzales Aguilar <br><br>
-                <b>&nbsp;&nbsp;N° Identidad:</b> 0301-2009-02067 <br><br> <b>&nbsp;&nbsp;Direccion:</b> Residencial Vista al Valle, Bloque B, Casa 16, Frente a Hospital <br>
-                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;San Cosme, Comayagua, Comayagua. <br><br> 
-                <b>&nbsp;&nbsp;Fecha De Nacimiento:</b> 6 de Mayo del 2008 <br><br> <b>&nbsp;&nbsp;Edad:</b> 16 <br><br> 
-                <b>&nbsp;&nbsp;Genero:</b> Masculino <br><br> <b>&nbsp;&nbsp;Correo Electronico:</b> : <a href="https://www.gmail.com">zac.molina1@gmail.com </a><br><br> <b>&nbsp;&nbsp;Numero Telefonico:</b> : +504 9939-9485 <br>
-            </p></td>
-            <td align="center"><br><br><img src="https://i.ibb.co/hFD8yPpC/Whats-App-Image-2025-02-21-at-21-08-35-fcd6975b.jpg" alt="Yo" width="auto" height="400px"></td>
+            <th>Destino</th>
+            <th>Pais</th>
+            <th>Dificultad</th>
+            <th>Temporada Recomendada</th>
         </tr>
-    </table>
-
-
-
-    <br><br><br>
-
-
-
-    <table width="100%" border="0" cellspacing="0" cellpadding="0">
-        <tr height="5px" align="center">
-            <td colspan="2" bgcolor="black"></td>
-        </tr>
-        <tr height="5px" align="center">
-            <td colspan="2" bgcolor="#343434"></td>
-        </tr>
-        <tr height="5px" align="center">
-            <td colspan="2" bgcolor="black"></td>
-        </tr>
-    </table>
-
- 
-
-    <table width="100%" border="02" cellspacing="5" cellpadding="5" ID="fort">
-        <tr align="left">
-
-            <td width="33%">
-                <p>
-                    <h2>&nbsp;&nbsp;Fortalezas: </h2> <br> <b>&nbsp;&nbsp;-</b>&nbsp;&nbsp;Calculos <br> <b>&nbsp;&nbsp;-</b>&nbsp;&nbsp;Adaptabilidad y aprendizaje continuo <br> 
-                    <b>&nbsp;&nbsp;-</b>&nbsp;&nbsp;Pensamiento lógico y resolución de problemas <br> 
-                    <b>&nbsp;&nbsp;-</b>&nbsp;&nbsp;Trabajo en equipo y comunicación <br> <b>&nbsp;&nbsp;-</b>&nbsp;&nbsp;Creatividad e innovación <br>
-                    <b>&nbsp;&nbsp;-</b>&nbsp;&nbsp;Gestión del tiempo y organización <br> 
-                </p>
-            </td>
-
-            <td width="33%">
-                <p>
-                    <h2>&nbsp;&nbsp;Pasatiempos: </h2> <br> <b>&nbsp;&nbsp;-</b>&nbsp;&nbsp;Videojuegos <br> <b>&nbsp;&nbsp;-</b>&nbsp;&nbsp;Programar <br> 
-                    <b>&nbsp;&nbsp;-</b>&nbsp;&nbsp;Cocinar <br> 
-                    <b>&nbsp;&nbsp;-</b>&nbsp;&nbsp;Ciclismo <br> <b>&nbsp;&nbsp;-</b>&nbsp;&nbsp;Caminatas <br>
-                    <b>&nbsp;&nbsp;-</b>&nbsp;&nbsp;Leer <a href="https://es.wikipedia.org/wiki/Fanfiction#:~:text=El%20t%C3%A9rmino%20fanfic%20o%20fan,o%20de%20forma%20simple%2C%20fic.">Fanfics </a><br> 
-                </p>
-            </td>
-
-            <td width="33%">
-                <p>
-                    <h2>&nbsp;&nbsp;Habilidades: </h2> <br> <b>&nbsp;&nbsp;-</b>&nbsp;&nbsp;Programación y desarrollo de aplicaciones. <br>
-                    <b>&nbsp;&nbsp;-</b>&nbsp;&nbsp;Conocimientos en Internet de las Cosas (IOT). <br> 
-                    <b>&nbsp;&nbsp;-</b>&nbsp;&nbsp;Habilidades analíticas y de resolución de problemas. <br> 
-                    <b>&nbsp;&nbsp;-</b>&nbsp;&nbsp;Proactividad y capacidad de aprendizaje rápido. <br> <b>&nbsp;&nbsp;-</b>&nbsp;&nbsp;Trabajo en equipo y liderazgo <br>
-                    <b>&nbsp;&nbsp;-</b>&nbsp;&nbsp;Dominio de varios idiomas. <a href="#Languages">Ver tabla 1.</a> <br> 
-                </p>
-            </td>
-        </tr>
-    </table>
-
-
-
-    <table width="100%" border="0" cellspacing="0" cellpadding="0">
-        <tr height="5px" align="center">
-            <td colspan="2" bgcolor="black"></td>
-        </tr>
-        <tr height="5px" align="center">
-            <td colspan="2" bgcolor="#343434"></td>
-        </tr>
-        <tr height="5px" align="center">
-            <td colspan="2" bgcolor="black"></td>
-        </tr>
-    </table>
-
-
-    
-    <br>
-
-
-
-    <table width="100%" border="0" cellspacing="0" cellpadding="0" ID="edu">
         <tr>
-            <td width="70%">
-                <p><h2>&nbsp;&nbsp; Educacion: </h2> <br> <b>&nbsp;&nbsp; (2012 - 2022) Saint Johns Bilingual School</b><br>
-                    <i><font size="2px">&nbsp;&nbsp; Educacion Prebasica, Primaria Y Secundaria</font></i> <br><br> 
-                    <b>&nbsp;&nbsp; (2023 - 2025) Instituto Marista La Inmaculada</b><br>
-                    <i><font size="2px">&nbsp;&nbsp; Bachillerato Tecnico Profesional En Informatica</font></i> <br><br>
-                    <b>&nbsp;&nbsp; (2023 - 2024) Academia Culinaria Hondureña</b><br>
-                    <i><font size="2px">&nbsp;&nbsp; Curso De Chef Profesional</font></i> <br><br>
-                </p>
-            </td>
-            <td width="30%" align="center"><img src="https://thumbs.dreamstime.com/b/elegante-y-sim%C3%A9trico-dibujo-de-la-escuela-en-gris-claro-negro-ilustraci%C3%B3n-secundaria-para-clase-arquitectura-con-un-estilo-301548615.jpg" alt="Yo" width="400px" height="auto"></td>
+            <td>Machu Pichu</td>
+            <td>Peru</td>
+            <td>Alta</td>
+            <td>Mayo - Septiembre</td>
         </tr>
-
         <tr>
-            <td width="50%">
-                <p><h2>&nbsp;&nbsp; Otras Formaciones Educativas: </h2> <br> <b>&nbsp;&nbsp; (2020 - 2022) Academia Europea</b><br>
-                    <i><font size="2px">&nbsp;&nbsp; Niveles Basico e Intermedio en Frances</font></i> <br><br> 
-                    <b>&nbsp;&nbsp; (2018 - 2019) Academia Europea</b><br>
-                    <i><font size="2px">&nbsp;&nbsp; Niveles Basico E Intermedio En Chino Mandarin</font></i> <br><br>
-                    <b>&nbsp;&nbsp; (2022) TEKKIE UNI</b><br>
-                    <i><font size="2px">&nbsp;&nbsp; Curso de Programacion En Scratch Para Niños</font></i> <br><br>
-                    <b>&nbsp;&nbsp; (2022) TEKKIE UNI</b><br>
-                    <i><font size="2px">&nbsp;&nbsp; Curso de Programacion En Scratch Para Niños</font></i> <br><br>
-                </p>
-            </td>
-            <td width="50%" align="center">
-                <img src="https://img.freepik.com/vector-gratis/ilustracion-neuroeducacion-dibujada-mano_23-2150945405.jpg?semt=ais_hybrid" alt="Yo" width="320px" height="auto">
-            </td>
-            
+            <td>Galciales de Patagonia</td>
+            <td>Argentina</td>
+            <td>Media</td>
+            <td>Diciembre - Febrero</td>
+        </tr>
+        <tr>
+            <td>Islas Galapagos</td>
+            <td>Ecuador</td>
+            <td>Baja</td>
+            <td>Todo el año</td>
+        </tr>
+        <tr>
+            <td>Torres del Paine</td>
+            <td>Chile</td>
+            <td>Alta</td>
+            <td>Noviembre - Marzo</td>
         </tr>
     </table>
-
-
-
-    <br><br><br>
-    
-
-
-    <table width="100%" border="0" cellspacing="0" cellpadding="0">
-        <tr height="5px" align="center">
-            <td colspan="2" bgcolor="black"></td>
-        </tr>
-        <tr height="5px" align="center">
-            <td colspan="2" bgcolor="#343434"></td>
-        </tr>
-        <tr height="5px" align="center">
-            <td colspan="2" bgcolor="black"></td>
-        </tr>
-    </table>
-
-    
-
-    <br><br><br>
-
-
-
-    <font size="4px"><table title="Idiomas Aprendidos" Id="Languages" width="100%" border="2" cellspacing="5" cellpadding="5">
-        <tr align="center">
-            <td><p><b><font size="6px">Idioma</font></b></p></td>
-            <td><p><b><font size="6px">Nivel</font></b></p></td>
-            <td colspan="2"><p><b><font size="6px">Comentario</font></b></p></td>
-        </tr>
-        <tr align="center">
-            <td><p><b>Español</b></p></td>
-            <td><p>Nativo</p></td>
-            <td><p>Habla fluida y comprension lectora.</p></td>
-        </tr>
-        <tr align="center">
-            <td><p><b>Ingles</b></p></td>
-            <td><p>Avanzado (C1)</p></td>
-            <td><p>Excelente comprension y expresion oral y escrita.</p></td>
-
-        </tr>
-        <tr align="center">
-            <td><p><b>Frances</b></p></td>
-            <td><p>Intermedio (B1)</p></td>
-            <td><p>Manejo de Vocabulario y Conversaciones Cotidianas</p></td>
-
-            </tr>
-        <tr align="center">
-            <td><p><b>Chino - Mandarin</b></p></td>
-            <td><p>Intermedio (B1)</p></td>
-            <td><p>Conversaciones Cotidianas y Lectura Comprensible</p></td>
-
-        </tr>
-        <tr align="center">
-            <td><p><b>Aleman</b></p></td>
-            <td><p>Basico (A2) </p></td>
-            <td><p>Lectura y Habla Aceptables Para Entornos Cotidianos.</p></td>
-
-        </tr>
-    </table> 
-    </font>
-    
-
-    <br><br><br>
-
-
-    <table width="100%" border="0" cellspacing="0" cellpadding="0">
-        <tr height="5px" align="center">
-            <td colspan="2" bgcolor="black"></td>
-        </tr>
-        <tr height="5px" align="center">
-            <td colspan="2" bgcolor="#343434"></td>
-        </tr>
-        <tr height="5px" align="center">
-            <td colspan="2" bgcolor="black"></td>
-        </tr>
-    </table>
-
- 
-
-    <font size="4px">
-        <p id="obje">
-            &nbsp;&nbsp;<h2>Objetivo Personal De Vida: </h2>
-            <br> &nbsp;&nbsp;Quiero convertirme en un programador que no solo escriba código, sino que también cree cosas que hagan la vida más fácil y divertida. Quiero disfrutar el proceso de aprender, superar desafíos y, algún día, usar mis habilidades para ayudar a los demás, ya sea con proyectos útiles o enseñando a quienes empiezan en este camino. Sobre todo, quiero encontrar un equilibrio entre mi pasión por la tecnología y una vida plena, rodeado de personas que me inspiren. <br><br>
-            &nbsp;&nbsp;<h2>Objetivo Profesional De Vida: </h2>
-            <br> Quiero Estudiar La Carrera de Ciencias De La Computacion tras graduarme
-            en mi Bachillerato Tecnico Profesional En Informatica. Tras graduarme de la 
-            Universidad me gustaria estudiar una Maestria en Ciberseguridad. Trabajar
-            y ahorrar para una empresa de desarollo de software, posteriormente retirarme.
-        </p>
-    </font>
-
-
-
-    <br><br><br>
-
-
-
-    <table width="100%" border="0" cellspacing="0" cellpadding="0">
-        <tr height="5px" align="center">
-            <td colspan="2" bgcolor="black"></td>
-        </tr>
-        <tr height="5px" align="center">
-            <td colspan="2" bgcolor="#343434"></td>
-        </tr>
-        <tr height="5px" align="center">
-            <td colspan="2" bgcolor="black"></td>
-        </tr>
-    </table>
-
-
-
-    <font size="4px">
-        <p id="contact">
-            &nbsp;&nbsp;<h2>Como Contactarme:  <i><font size="3px">(hacer clic en los <font color="green">ICONOS</font> no el <font color="red">TEXTO</i>)</h2></font>
-        </p>
-    </font>
-    
-    <font size="2px" >
-    <table Id="" width="100%" border="0" cellspacing="0" cellpadding="0">
-        <tr align="center">
-            <td width="20%">
-                <a href="https://www.whatsapp.com/"><img src="https://thumbs.dreamstime.com/b/snap-chat-w-251223623.jpg" alt="wasap" width="75px" height="auto"></a>
-                <p><u>+504 9939 - 9485</u></p>     
-            </td>
-            <td width="20%">
-                <a href="https://www.instagram.com/"><img src="https://xiaomiui.net/wp-content/uploads/2022/05/Instagram-new-logo-e1652752802319.jpg" alt="insta" width="75px" height="auto"></a>
-                <p><u>@Zac Molina</u></p>  
-            </td>
-            <td width="20%">
-                <a href="https://www.gmail.com/"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTvJRR-U9ypdUmfQPO5qLWJQTohAtjMB-4Zf4__wbTP3MaW3H-aDBdO9OvF7hhhHfFTuzI&usqp=CAU" alt="gmail" width="75px" height="auto"></a>
-                <p><u>zac.molina1@gmail.com</u></p>  
-            </td>
-            <td width="20%">
-                <a href="https://www.outlook.com/"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/df/Microsoft_Office_Outlook_%282018%E2%80%93present%29.svg/1200px-Microsoft_Office_Outlook_%282018%E2%80%93present%29.svg.png" alt="outlook" width="75px" height="auto"></a>
-                <p><u>zacary.gonzales.02067@maristascomayagua.edu.hn</u></p>                 
-            </td>
-            <td width="20%">
-                <a href="https://www.facebook.com/"><img src="https://thumbs.dreamstime.com/b/facebook-logo-vector-eps-file-squared-coloured-easily-editable-have-white-background-high-resolution-255557233.jpg" alt="facebk" width="75px" height="auto"></a>
-                <p><u>@Zac Molina</u></p>  
-            </td>
-        </tr>
-    </table>
-    </font>
-
-    <br><br>
-
-
-
-    <table width="100%" border="0" cellspacing="0" cellpadding="0">
-        <tr height="5px" align="center">
-            <td colspan="2" bgcolor="black"></td>
-        </tr>
-        <tr height="5px" align="center">
-            <td colspan="2" bgcolor="#343434"></td>
-        </tr>
-        <tr height="5px" align="center">
-            <td colspan="2" bgcolor="black"></td>
-        </tr>
-    </table>
-
-
-    
-    <font color="white" size=5px>
-    <table width="100%" border="0" bgcolor="Darkgray" cellspacing="0" cellpadding="0">
-        <tr align="center">
-            <td><a href="#TOPp">Volver Arriba</a></td>
-        </tr>
-    </table>
-    </font>
-    
-
-
-
-    <table width="100%" border="0" cellspacing="0" cellpadding="0">
-        <tr height="5px" align="center">
-            <td colspan="2" bgcolor="black"></td>
-        </tr>
-        <tr height="5px" align="center">
-            <td colspan="2" bgcolor="#343434"></td>
-        </tr>
-        <tr height="5px" align="center">
-            <td colspan="2" bgcolor="black"></td>
-        </tr>
-    </table>
-
 </body>
 </html>
